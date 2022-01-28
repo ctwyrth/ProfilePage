@@ -24,17 +24,17 @@
     color: white;
 }
 
-.navbar h1 {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 75%;
     margin: 15px auto;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .nav-links {
