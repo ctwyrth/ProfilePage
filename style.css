@@ -28,8 +28,9 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 75%;
-    margin: 15px auto;
+    margin: 5px auto;
 }
 
 .navbar h1 {
@@ -44,7 +45,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .nav-links li a {
@@ -82,7 +83,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 70%;
-    margin: 80px auto 0;
+    margin: 50px auto 0;
 }
 
 .articles {
@@ -298,6 +299,11 @@ nav {
     background-color: white;
     color: black;
     margin-right: 10px;
+}
+
+.wider {
+    width: 40px;
+    padding-left: 3px;
 }
 
 .subbody {
