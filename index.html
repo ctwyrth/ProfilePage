@@ -16,12 +16,15 @@
             <header class="header">
                 <nav class="navbar">
                     <h1>PROFILE</h1>
-                    <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">My Profile</a></li>
-                        <li><a href="#">Find Connections</a></li>
-                        <li><button type="button" class="signout">Sign Out</button></li>
-                    </ul>
+                    <div class="nav">
+                        <div class="nav-links" id="navlinks">
+                            <a href="#">Home</a></li>
+                            <a href="#" class="active">My Profile</a></li>
+                            <a href="#">Find Connections</a></li>
+                        </div>
+                        <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                        <button type="button" class="signout">Sign Out</button></li>
+                    </div>
                 </nav>
             </header>
             <div class="main">
@@ -126,5 +129,15 @@
                 </aside>
             </div>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navlinks");
+                if (x.className === "nav-links") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav-links";
+                }
+            }
+        </script>
     </body>
 </html>
