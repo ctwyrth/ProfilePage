@@ -32,11 +32,11 @@
                     <section class="user-card">
                         <div class="head"></div>
                         <div class="body">
-                            <h1>Thomas Wyrth</h1>
+                            <h1 id="profile-user-name">Thomas Wyrth</h1>
                             <div class="location"><img src="img/map-marker.png" alt="map marker icon"> Portland, OR</div>
                             <p>Web Developer | Designer | Logical Thinker<br>
                             Just a function waiting to be declared!</p>
-                            <div class="edit"><img src="img/gear.png" alt="gear icon"> <a href="#">edit profile</a></div>
+                            <div class="edit"><img src="img/gear.png" alt="gear icon"> <a href="#" onclick="changeName()">edit profile</a></div>
                         </div>
                         <div class="floating-head"><img src="img/me_memoji.png" alt="user image placeholder graphic"></div>
                     </section>
@@ -103,17 +103,17 @@
                 </div>
                 <aside class="sidebar">
                     <section class="connect_req">
-                        <div class="subhead"><div class="counter">3</div><h2>Connection Requests</h2></div>
+                        <div class="subhead"><div id="reqcount" class="counter">3</div><h2>Connection Requests</h2></div>
                         <div class="subbody">
                             <ul class="subbody-list">
-                                <li><span><img src="img/user-circle.png" alt="user image place holder graphic">Peter P.</span> <span><i class="fa-solid fa-circle-check"></i><i class="fa-solid fa-circle-xmark"></i></span></li>
-                                <li><span><img src="img/user-circle.png" alt="user image place holder graphic">James H.</span> <span><i class="fa-solid fa-circle-check"></i><i class="fa-solid fa-circle-xmark"></i></span></li>
-                                <li><span><img src="img/user-circle.png" alt="user image place holder graphic">Ororo M.</span> <span><i class="fa-solid fa-circle-check"></i><i class="fa-solid fa-circle-xmark"></i></span></li>
+                                <li id="req1"><span><img src="img/user-circle.png" alt="user image place holder graphic">Peter P.</span> <span><i class="fa-solid fa-circle-check" onclick="removeRequest('req1'); changeRequestCount(); incrementConnections();"></i><i class="fa-solid fa-circle-xmark" onclick="removeRequest('req1'); changeRequestCount();"></i></span></li>
+                                <li id="req2"><span><img src="img/user-circle.png" alt="user image place holder graphic">James H.</span> <span><i class="fa-solid fa-circle-check" onclick="removeRequest('req2'); changeRequestCount(); incrementConnections();"></i><i class="fa-solid fa-circle-xmark" onclick="removeRequest('req2'); changeRequestCount();"></i></span></li>
+                                <li id="req3"><span><img src="img/user-circle.png" alt="user image place holder graphic">Ororo M.</span> <span><i class="fa-solid fa-circle-check" onclick="removeRequest('req3'); changeRequestCount(); incrementConnections();"></i><i class="fa-solid fa-circle-xmark" onclick="removeRequest('req3'); changeRequestCount();"></i></span></li>
                             </ul>
                         </div>
                     </section>
                     <section class="your-connect">
-                        <div class="subhead"><div class="counter wider">99+</div><h2>Your Connections</h2></div>
+                        <div class="subhead"><div id="connectcount" class="counter wider">994</div><h2>Your Connections</h2></div>
                         <div class="subbody">
                             <ul class="subbody-list">
                                 <li><span><img src="img/user-circle.png" alt="user image place holder graphic">Diana P.</span></li>
@@ -129,15 +129,6 @@
                 </aside>
             </div>
         </div>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("navlinks");
-                if (x.className === "nav-links") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "nav-links";
-                }
-            }
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

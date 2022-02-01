@@ -361,7 +361,7 @@ button.signout:hover {
 
 .wider {
     width: 40px;
-    padding-left: 3px;
+    /* padding-left: 3px; */
 }
 
 .subbody {
